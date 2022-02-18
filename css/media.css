@@ -1,0 +1,65 @@
+@media screen and (max-width: 992px) {
+    nav{
+        display: block;
+        padding: 0;
+     
+    }
+    nav .logo{
+        width: 80%;
+        display: inline-block;
+        margin: auto;
+      
+    }
+    nav .logo img{
+        width: 50%;
+        margin: auto;
+    }
+    nav ul{
+        display: block;
+        position: absolute;
+       top: 0;
+       left:-100%;
+       width: 100%;
+       background-color: #21212e;
+       height: 100%;
+      
+    }
+    nav ul li{
+        width: 100%;
+        margin: auto;
+        padding-bottom: 15px;
+        display: inline-block;
+        text-align: center;
+
+    }
+    nav ul li:hover:after{
+        left: 28%;
+        bottom: 10px;
+    }
+    nav ul li:hover::before{
+        right: 27%;
+        
+    }
+    nav ul li:nth-of-type(5){
+        margin:15px auto;
+        display: block;
+        width: 50%;
+    }
+
+    nav ul li:nth-of-type(6){
+        margin:auto;
+        display: block;
+        width: 50%;
+    }
+    .toggle{
+        display: block;
+    }
+   nav .menu{
+        display: inline-block;
+        width: 15%;
+        cursor: pointer;
+        
+        border-radius: 8px;
+       
+    }
+  }

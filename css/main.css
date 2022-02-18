@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background-color: #21212e;
+  height: 500vh;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #822EFF;
+}
+::-webkit-scrollbar-track{
+    background-color: #46C2FF;
+}
+/* ******* navbar ******* */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+
+}
+.toggle{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    font-size: 40px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+nav .menu{
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #822EFF;
+    color: #fff;
+    display: none;
+   
+}
+nav .logo {
+  width: 15%;
+}
+nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+nav ul {
+  width: 85%;
+  padding: 10px 0px;
+  justify-content: end;
+  display: flex;
+  list-style: none;
+  color: #fff;
+  transition: 1s;
+}
+nav ul li {
+  width: 13%;
+  text-align: start;
+  overflow: hidden;
+  line-height: 40px;
+  margin:0px 5px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+
+  
+}
+nav ul li:not(:nth-of-type(5),:nth-of-type(6))::after{
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: -100%;
+    height: 5px;
+    width: 45%;
+    background-color: #46C2FF;
+    transition: .3s ease-out;
+}
+nav ul li:hover::after{
+    left: 0%;
+}
+nav ul li:not(:nth-of-type(5),:nth-of-type(6))::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    height: 5px;
+    width: 45%;
+    background-color: #BD11FA;
+    transition: .3s ease-out;
+}
+nav ul li:hover::before{
+    right: 70%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+nav ul li[data-back="SignIn"]{
+    background-image: linear-gradient(130deg,#BD11FA,#46C2FF);
+    border-radius: 5px;
+    text-align: center;
+  
+    box-shadow: 0px 0px 15px 0px #822EFF;
+}
+nav ul li[data-back="SignUp"]{
+    border-radius: 5px;
+    border:2px solid #46C2FF;
+    text-align: center;
+    
+
+  
+}
+nav ul li[data-back="SignUp"] a{
+color: #46C2FF;
+}
+nav ul.active{
+    left: 0;
+}
+/* ****************    header       ************  */
+
+header{
+    height: 100vh;
+    background-image: url("../imgs/header.png");
+    background-position:90vh 5vh;
+    background-size: 900px;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+header::after{
+    content: "";
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    left: -400px;
+    top: -400px;
+    border-radius: 100%;
+    border: 1px solid rgba(70, 194, 255,.5);
+    z-index: -1;
+}
+header::before{
+    content: "";
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: -200px;
+    top: -200px;
+    border-radius: 100%;
+    border: 5px dashed rgba(70, 194, 255,.5);
+    z-index: -1;
+}
+header .content{
+    margin-top: 200px;
+}
+header .content p{
+    color: #fff;
+    font-size: 20px;
+
+}
+header .content h1{
+   font-size: 78px;
+   color: #46C2FF;
+   font-weight: 500;
+   margin-bottom: 50px;
+}
+
+.main-button{
+    
+    background-image: linear-gradient(130deg,#BD11FA,#46C2FF);
+    box-shadow: 0px 0px 15px 0px #822EFF;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 180px;
+}
