@@ -71,6 +71,7 @@ nav ul li {
   font-weight: bold;
   position: relative;
   text-transform: uppercase;
+ 
 
   
 }
@@ -86,6 +87,7 @@ nav ul li:not(:nth-of-type(5),:nth-of-type(6))::after{
 }
 nav ul li:hover::after{
     left: 0%;
+    
 }
 nav ul li:not(:nth-of-type(5),:nth-of-type(6))::before{
     content: "";
@@ -95,7 +97,7 @@ nav ul li:not(:nth-of-type(5),:nth-of-type(6))::before{
     height: 5px;
     width: 45%;
     background-color: #BD11FA;
-    transition: .3s ease-out;
+    transition: .5s ease-out;
 }
 nav ul li:hover::before{
     right: 70%;
@@ -111,22 +113,36 @@ nav ul li a:hover{
     color: #fff;
 }
 nav ul li[data-back="SignIn"]{
-    background-image: linear-gradient(130deg,#BD11FA,#46C2FF);
+    background: linear-gradient(90deg,#BD11FA,#46C2FF);
     border-radius: 5px;
     text-align: center;
-  
     box-shadow: 0px 0px 15px 0px #822EFF;
+    transition: .3s !important;
+    
+    
+}
+nav ul li[data-back="SignIn"]:hover{
+
+    box-shadow: 0px 0px 15px 0px #46C2FF;
+   
+   
 }
 nav ul li[data-back="SignUp"]{
     border-radius: 5px;
     border:2px solid #46C2FF;
     text-align: center;
-    
-
-  
+    transition: 1s;
+}
+nav ul li[data-back="SignUp"]:hover{
+   
+    background-color: #46C2FF;
+}
+nav ul li[data-back="SignUp"]:hover a{
+    color: #fff;
 }
 nav ul li[data-back="SignUp"] a{
 color: #46C2FF;
+transition: .3s;
 }
 nav ul.active{
     left: 0;
@@ -190,4 +206,120 @@ header .content h1{
     border-radius: 8px;
     font-size: 16px;
     width: 180px;
+}
+
+/* events */
+
+.events .adsCard{
+    height: 600px;
+    position: relative;
+    background-image: url(../imgs/ads.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+
+
+}
+.footerText{
+    position: absolute;
+    bottom: 0;
+    height: 35%;
+    background-color: rgba(22, 38, 64,.8);
+
+}
+
+.events .footerText  .title-text h2 span{
+    font-size: 16px;
+    color: #46C2FF;
+    float: right;
+}
+.events .footerText  .title-text h2 span i{
+    color: #822EFF;
+}
+
+.events .footerText:last-child i{
+  
+    color: #822EFF;
+}
+.events .footerText p:nth-child(3){
+    color: #46C2FF;
+    font-size: 16px;
+}
+.events .item{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    padding: 2px;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.events .item .date{
+    height: 100%;
+    width: 25%;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-left: 3px;
+    
+}
+.events .item .date span:first-child{
+    
+    height: 100%;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 41px;
+    line-height: 46px;
+    color: #822EFF;
+}
+.events .item .date span:last-child{
+   color: #46C2FF;
+   font-weight: bold;
+    height: 100%;
+    
+}
+.events .item .content{
+    width: 45%;
+    line-height: 70px;
+    text-align: center;
+}
+.events .item .time{
+    line-height: 70px;
+    margin-right: 2px;
+    color: #46C2FF;
+}
+.events .item button{
+    background-color: #BD11FA;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    width: 15%;
+    
+}
+
+.prev,.next{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #46C2FF;
+    border-radius: 6px;
+    background: none;
+    transition: .5s;
+    margin: 0 5px;
+}
+.prev,.next i{
+   color: #46C2FF;
+   font-size: 25px;
+}
+.prev:hover ,.next:hover{
+    background-color: #46C2FF;
+}
+.prev:hover ,.next:hover i {
+    color: #fff;
+}
+.myshadow{
+    box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.5);
 }
