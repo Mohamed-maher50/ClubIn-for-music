@@ -16,12 +16,14 @@
     }
     nav ul{
         display: block;
-        position: absolute;
+        position: fixed;
        top: 0;
        left:-100%;
        width: 100%;
        background-color: #21212e;
        height: 100%;
+       z-index: 10;
+       padding-top: 150px;
       
     }
     nav ul li{
@@ -61,5 +63,14 @@
         
         border-radius: 8px;
        
+    }
+
+    /* artist */
+    .artist{
+        display: none;
+    }
+    .artist .card{
+        width: 90%;
+        margin: 10px auto;
     }
   }

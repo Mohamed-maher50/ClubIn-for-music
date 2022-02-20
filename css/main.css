@@ -8,7 +8,7 @@
 
 body {
   background-color: #21212e;
-  height: 500vh;
+
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -23,7 +23,14 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0px;
+ 
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #20202C;
+  z-index: 1000;
+  height: 75px;
 
 }
 .toggle{
@@ -300,7 +307,102 @@ header .content h1{
     width: 15%;
     
 }
+/* *****   artist   **** */
 
+.artist .container h1:first-child {
+    color: #46C2FF;
+    margin: 50px 0;
+}
+.artist .slider{
+    height: 380px;
+    
+}
+.artist .card{
+    background-color: #20202C;
+}
+.artist .head {
+    height: 15%;
+}
+.artist .head span{
+    color: #46C2FF;
+}
+.artist .head span i{
+    color: #822EFF;
+}
+.artist .img-card{
+    height: 40%;
+}
+.artist .footer-text{
+    height: 45%;
+    color: #fff;
+
+}
+.artist .footer-text h3{
+    border-bottom: 3px solid #822EFF;
+    width: max-content;
+    
+    padding-bottom: 8px;
+  
+}
+.artist .footer-text p{
+    font-size: 14px;
+}
+.artist .card{
+    width: 30.33%;
+}
+/* section contact us */
+.contactUs .bg-section{
+    background-image: url(../imgs/Rectangle\ 2260.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contentUs-form{
+    background-color: #20202C;
+    color:#fff;
+    padding: 25px 5px;
+}
+
+.contactUs .contentUs-form form{
+    display: flex;
+    align-items: center;
+
+}
+.contactUs .contentUs-form form input,button{
+    outline: none;
+    border: none;
+    height: 50px;
+}
+
+.contactUs .contentUs-form form input{
+    width: 65%;
+    padding: 8px;
+    border-radius: 5px 0px 0px 5px;
+}
+.contactUs .contentUs-form form button{
+   width: 35%;
+}
+.linnerButton{
+    background: linear-gradient(90deg,#BD11FA,#46C2FF);
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px #822EFF;
+    transition: .3s !important;
+    color: #fff;
+}
+
+.linnerButton:hover{
+
+    box-shadow: 0px 0px 15px 0px #46C2FF;
+   
+   
+}
+
+
+
+
+/*
+global classes 
+ */
 .prev,.next{
     width: 100px;
     height: 50px;
@@ -322,4 +424,14 @@ header .content h1{
 }
 .myshadow{
     box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.5);
+}
+.layout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: -20px;
+}
+.layout[data-layout="dark"]{
+    background-color: rgba(0, 0, 0, 0.1);
 }
