@@ -391,15 +391,53 @@ header .content h1{
 }
 
 .linnerButton:hover{
-
     box-shadow: 0px 0px 15px 0px #46C2FF;
+}
+/* about */
+.about{
    
-   
+    background: linear-gradient(90deg,#46C2FF,#BD11FA);
+}
+.about{
+  
+    background: linear-gradient(90deg,#46C2FF,#BD11FA);
+}
+.about .content{
+  
+    color: #283C5C;
+    padding: 50px;
+
+}
+.about .content h1{
+    border-bottom: 3px solid #283C5C ;
+    width: max-content;
+    font-weight: bolder;
+}
+.about .background{
+    background: url(../imgs/Group\ 2504.png);
+    height: 300px;
 }
 
-
-
-
+/* artist slider */
+.artist-slider{
+height: 600px;
+background: url(../imgs/artist.png);
+background-size: 100% 100%;
+}
+.artist-slider .content-slider{
+    height: 500px;
+    width: 100%;
+    transform: translate(0px,10%);
+    background-color: rgba(22, 38, 64,.8)
+}
+.artist-slider .content-slider h1{
+    color: #46C2FF;
+}
+.artist-slider .content-slider .linnerButton{
+    width: 160px;
+    margin: 0 auto;
+    display: block;
+}
 /*
 global classes 
  */
