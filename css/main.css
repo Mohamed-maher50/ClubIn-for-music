@@ -394,25 +394,10 @@ header .content h1{
     box-shadow: 0px 0px 15px 0px #46C2FF;
 }
 /* about */
-.about{
-   
-    background: linear-gradient(90deg,#46C2FF,#BD11FA);
-}
-.about{
-  
-    background: linear-gradient(90deg,#46C2FF,#BD11FA);
-}
-.about .content{
-  
-    color: #283C5C;
-    padding: 50px;
 
-}
-.about .content h1{
-    border-bottom: 3px solid #283C5C ;
-    width: max-content;
-    font-weight: bolder;
-}
+
+
+
 .about .background{
     background: url(../imgs/Group\ 2504.png);
     height: 300px;
@@ -420,12 +405,13 @@ header .content h1{
 
 /* artist slider */
 .artist-slider{
-height: 600px;
+
 background: url(../imgs/artist.png);
 background-size: 100% 100%;
+padding: 90px 0;
 }
 .artist-slider .content-slider{
-    height: 500px;
+  
     width: 100%;
     transform: translate(0px,10%);
     background-color: rgba(22, 38, 64,.8)
@@ -437,6 +423,25 @@ background-size: 100% 100%;
     width: 160px;
     margin: 0 auto;
     display: block;
+}
+.CloobinParty{
+    padding: 5% 0;
+}
+.CloobinParty .title{
+    color: #46C2FF;
+    
+}
+.CloobinParty p{
+    color: #fff;
+
+    line-height: 50px;
+}
+.CloobinParty img{
+    width: 100%;
+    height: 100%;
+}
+.Contacts img{
+    transform: translate(0px,-120px);
 }
 /*
 global classes 
@@ -472,4 +477,17 @@ global classes
 }
 .layout[data-layout="dark"]{
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.linnerBackgoround{
+  
+    background: linear-gradient(90deg,#46C2FF,#BD11FA);
+}
+.headText{
+    border-bottom: 3px solid #283C5C ;
+    width: max-content;
+    font-weight: bolder;
+    color: #283C5C;
+    padding: 40px 20px 20px 0px;
+
 }
