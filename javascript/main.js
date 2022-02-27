@@ -87,5 +87,5 @@ function NEXT(){
  
 }
 window.onload = function(){
-    alert("hello in my web site my name is mohamed maher")
+    alert("welcome in my web site my name is mohamed maher")
 }
